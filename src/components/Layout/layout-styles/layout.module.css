@@ -1,3 +1,7 @@
 .background {
+  display: flex;
+  flex: 1;
+  height: 100vh;
   background-color: #00807f;
+  color: white;
 }

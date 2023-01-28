@@ -1,0 +1,20 @@
+import { useEffect, useState } from "react";
+import { getCurrentTime } from "../../../helper/getCurrentTime";
+import classes from "./os-button-styles/os-button.module.css";
+
+export default function Clock() {
+  const [time, setTime] = useState(getCurrentTime())
+
+  useEffect(() => {
+    setInterval(() => {
+      setTime(getCurrentTime())
+    }, 1000)
+  }, []);
+  
+
+	return (
+		<button className={classes.clock_button_main}>
+			<p className={classes.clock_text}>{time}</p>
+		</button>
+	);
+}

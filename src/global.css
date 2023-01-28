@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "WindowsRegular";
+  src: url("./fonts/WindowsRegular.ttf");
+}
+
+@font-face {
+  font-family: "WindowsRegularBold";
+  src: url("./fonts/WindowsRegularBold.ttf");
+}
+
+App {
+  font-family: "WindowsRegular", monospace;
+}

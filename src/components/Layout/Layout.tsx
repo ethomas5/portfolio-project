@@ -1,12 +1,13 @@
+import classes from "./layout-styles/layout.module.css"
+
 interface Props {
 	children: React.ReactNode;
 }
 
 export default function Layout({ children }: Props) {
 	return (
-		<div>
+		<div className={classes.background}>
       {children}
-			<Footer />
 		</div>
 	);
 }
