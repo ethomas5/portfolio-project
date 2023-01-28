@@ -2,6 +2,15 @@
   height: 1.5em;
   width: auto;
   margin: auto 0.5em auto 0.5em;
+}
 
-  
+.application_icon {
+  display: none;
+}
+
+@media screen and (max-width: 371px) {
+
+  .application_icon {
+    display: flex;
+  } 
 }

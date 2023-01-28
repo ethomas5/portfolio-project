@@ -17,7 +17,7 @@
   margin-right: 4px;
 }
 
-.button_main:active {
+.start_button_main:active {
   border-width: 1px;
   border-color: #3a3a3a #f0f0f1 #f0f0f1 #3a3a3a;
 

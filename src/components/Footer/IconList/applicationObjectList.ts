@@ -36,8 +36,8 @@ export const applicationList = [
 	},
 
 	{
-		id: "Resume",
 		image: "Placeholder.png",
+		text: "Resume",
 		link: "",
 	},
 ];

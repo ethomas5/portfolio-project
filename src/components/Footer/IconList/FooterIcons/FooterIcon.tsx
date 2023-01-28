@@ -1,9 +1,15 @@
 import classes from "./footer-icon.module.css"
 
 interface Props {
-  image: string
+	image: string;
 }
 
 export default function FooterIcon({ image }: Props) {
-  return <img className={classes.image} src={image} alt="" />
+	return (
+		<img
+			className={classes.image}
+			src={image}
+			alt=''
+		/>
+	);
 }

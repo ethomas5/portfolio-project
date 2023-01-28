@@ -6,3 +6,9 @@
   align-items: center;
   height: 2em;
 }
+
+@media screen and (max-width: 371px) {
+  .icon_list {
+    display: none;
+  }
+}

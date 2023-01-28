@@ -8,6 +8,14 @@
   src: url("./fonts/WindowsRegularBold.ttf");
 }
 
-App {
+.App {
+  display: flex;
+  flex-direction: column;
   font-family: "WindowsRegular", monospace;
+  height: 100vh;
+  width: auto;
+}
+
+body {
+  height: 100vh;
 }
