@@ -1,11 +1,4 @@
 .start_button_main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  height: 1.7em;
-  width: 4em;
-
   background-color: #989EA1;
   border-width: 1px;
   border-color: #f0f0f1 #3a3a3a #3a3a3a #f0f0f1;
@@ -26,14 +19,7 @@
 
 .clock_button_main {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  height: 1.7em;
-  width: 4em;
-
-  background-color: #989EA1;
-
+  flex-direction: column;
   box-shadow: inset -1px -1px rgb(255, 255, 255), inset 1px 1px rgb(0, 0, 0);
   border: none;
 
@@ -41,15 +27,15 @@
   margin-right: 4px;
 }
 
-.clock_text {
-  font-family: "WindowsRegular", monospace;
+.start_button_main, .clock_button_main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-  color: black;
-  font-size: 0.7em;
-  margin: 0;
-  
-  letter-spacing: 1px;
-  text-align: center;
+  height: 60%;
+  width: 4rem;
+
+  background-color: #989EA1;
 }
 
 .os_text {
@@ -57,7 +43,19 @@
 
   color: black;
   font-size: 0.7em;
-  margin: 0;
+  padding-bottom: 0.2em;
+  
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.clock_text {
+  font-family: "WindowsRegular", monospace;
+}
+
+.os_text, .clock_text {
+  color: black;
+  font-size: 0.7em;
   
   letter-spacing: 1px;
   text-align: center;
@@ -66,4 +64,22 @@
 .logo {
   height: 1em;
   width: auto;
+}
+
+@media screen and (min-width: 641px){
+  .start_button_main {
+    width: 5em;
+  }
+
+  .clock_button_main {
+    width: 7em;
+  }
+
+  .os_text {
+    font-size: 0.9em;
+  }
+
+  .clock_text {
+    font-size: 0.8em;
+  }
 }

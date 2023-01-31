@@ -1,12 +1,10 @@
 .main_container {
   display: flex;
-  justify-content: space-evenly;
+  z-index: 1;
 
-  flex: 1;
   align-items: center;
   background-color: #989EA1;
-  height: 3em;
-  margin-top: auto;
+  height: 50px;
   border-top: solid 2px #cfcfcf;
   margin-bottom: 0;
 }

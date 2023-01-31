@@ -1,5 +1,5 @@
-interface info {
-  image: string
-  text: string
-  link: string
-}
+import { applicationList } from "../../components/Footer/IconList/applicationObjectList";
+
+export const getApplicationList = () => {
+	return applicationList;
+};

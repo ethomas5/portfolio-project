@@ -1,8 +1,9 @@
 .background {
   display: flex;
+  flex-direction: column;
+  
   flex: 1;
   height: 100%;
   width: auto;
-  background-color: #00807f;
   color: white;
 }

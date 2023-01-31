@@ -1,0 +1,54 @@
+.icon_list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  
+  align-items: center;
+  height: 2em;
+}
+
+.desktop_icon_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 371px) {
+  .icon_list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .icon_list {
+    margin-left: 10px;
+  }
+
+  .desktop_icon_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-height: 390px){
+  .desktop_icon_list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-height: 800px) and (min-width: 800px) {
+  .desktop_icon_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    
+    margin-top: 20px;
+  }
+}

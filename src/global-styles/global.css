@@ -1,11 +1,11 @@
 @font-face {
   font-family: "WindowsRegular";
-  src: url("./fonts/WindowsRegular.ttf");
+  src: url("../fonts/WindowsRegular.ttf");
 }
 
 @font-face {
   font-family: "WindowsRegularBold";
-  src: url("./fonts/WindowsRegularBold.ttf");
+  src: url("../fonts/WindowsRegularBold.ttf");
 }
 
 .App {
@@ -14,8 +14,4 @@
   font-family: "WindowsRegular", monospace;
   height: 100vh;
   width: auto;
-}
-
-body {
-  height: 100vh;
 }

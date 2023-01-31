@@ -1,12 +1,12 @@
-import { applicationList } from "./applicationObjectList";
 import FooterIcon from "./FooterIcons/FooterIcon";
-import Placeholder from "../../../assets/Placeholder.png"
-import classes from "./icon-list-styles/icon-list.module.css"
+import classes from "../../../global-styles/icon-list.module.css"
+import { getApplicationList } from "../../../helper/retrieve-icon-info/fetchInfo";
 
 export default function FooterIconList() {
+  const iconInfo = getApplicationList()
 
-  const images = applicationList.map((item) => {
-		return <FooterIcon key={item.text} image={Placeholder}/>
+  const images = iconInfo.map((item) => {
+		return <FooterIcon key={item.text} image={`/src/assets/${item.image}`}/>
   });
 
   return <div className={classes.icon_list}>

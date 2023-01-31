@@ -1,9 +1,11 @@
 import FooterIcon from "./FooterIcon";
-import Placeholder from "../../../../assets/Placeholder.png"
-import classes from "./footer-icon.module.css"
+import Placeholder from "../../../../assets/Placeholder.png";
+import classes from "../../../../global-styles/icon-styles.module.css";
 
 export default function ApplicationsIcon() {
-  return <div className={classes.application_icon}>
-    {<FooterIcon image={Placeholder}/>}
-  </div>
+	return (
+		<div className={classes.all_application_icon}>
+			{<FooterIcon image={Placeholder} />}
+		</div>
+	);
 }

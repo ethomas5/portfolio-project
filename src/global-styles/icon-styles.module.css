@@ -1,0 +1,53 @@
+.footer_image {
+	height: 1.5em;
+	width: auto;
+	margin: auto 0.5em auto 0.5em;
+}
+
+.all_application_icon {
+	display: none;
+}
+
+.desktop_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  width: 50px;
+
+  margin: 0px 30px 30px 30px;
+}
+
+.desktop_icon p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.desktop_icon_image {
+  height: 2.5em;
+  width: auto;
+}
+
+@media screen and (max-width: 371px) {
+	.all_application_icon {
+		display: flex;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 900px) {
+  .desktop_icon {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px;
+    width: 4em;
+  }
+
+  .desktop_icon_image {
+    width: auto;
+  }
+}
