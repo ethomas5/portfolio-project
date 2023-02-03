@@ -1,5 +1,5 @@
 .footer_image {
-	height: 1.5em;
+	height: 40px;
 	width: auto;
 	margin: auto 0.5em auto 0.5em;
 }
@@ -27,8 +27,8 @@
 }
 
 .desktop_icon_image {
-  height: 2.5em;
-  width: auto;
+  height: 55px;
+  width: 55px;
 }
 
 @media screen and (max-width: 371px) {

@@ -1,12 +1,6 @@
 export const applicationList = [
 	{
-		image: "Placeholder.png",
-		text: "Resume",
-		link: "",
-	},
-
-	{
-		image: "Placeholder.png",
+		image: "projects_other.png",
 		text: "Projects",
 		link: "",
 
@@ -24,13 +18,19 @@ export const applicationList = [
 	},
 
 	{
-		image: "Placeholder.png",
+		image: "resume.png",
+		text: "Resume",
+		link: "",
+	},
+
+	{
+		image: "other_experiences.png",
 		text: "Experience",
 		link: "",
 	},
 
 	{
-		image: "Placeholder.png",
+		image: "contact.png",
 		text: "Contact",
 		link: "",
 	},

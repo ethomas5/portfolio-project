@@ -1,4 +1,4 @@
-import { applicationList } from "../../components/Footer/IconList/applicationObjectList";
+import { applicationList } from "../../applicationObjectList";
 
 export const getApplicationList = () => {
 	return applicationList;

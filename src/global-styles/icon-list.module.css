@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   margin: auto;
+  margin-top: 4px;
   
   align-items: center;
   height: 2em;
@@ -22,16 +23,7 @@
 }
 
 @media screen and (min-width: 900px) {
-  .icon_list {
-    margin-left: 10px;
-  }
-
   .desktop_icon_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    
     margin-top: 0;
   }
 }
@@ -50,5 +42,6 @@
     align-items: flex-start;
     
     margin-top: 20px;
+    margin-left: 10px;
   }
 }

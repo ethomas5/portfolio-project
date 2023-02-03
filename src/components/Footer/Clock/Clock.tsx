@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getCurrentTime } from "../../../helper/clock-functions/getCurrentTime";
-import classes from "./os-button-styles/os-button.module.css";
+import classes from "../../GlobalComponents/OSButtons/os-button-styles/os-button.module.css";
 
 export default function Clock() {
 	const [time, setTime] = useState(getCurrentTime());

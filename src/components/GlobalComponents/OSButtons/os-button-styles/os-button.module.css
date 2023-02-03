@@ -1,0 +1,89 @@
+.os_button_main {
+	background-color: #989ea1;
+	border-width: 1px;
+	border-color: #f0f0f1 #3a3a3a #3a3a3a #f0f0f1;
+
+	box-shadow: 1px 1px black, inset 1px 1px rgb(199, 199, 199);
+
+	padding: 0;
+}
+
+.os_button_main:active {
+	border-width: 1px;
+	border-color: #3a3a3a #f0f0f1 #f0f0f1 #3a3a3a;
+
+	box-shadow: inset 1px 1px black, -1px -1px rgb(199, 199, 199);
+}
+
+.start_button {
+	margin-left: 3px;
+	margin-right: 2px;
+}
+
+.clock_button_main {
+	display: flex;
+	flex-direction: column;
+	box-shadow: inset -1px -1px rgb(255, 255, 255), inset 1px 1px rgb(0, 0, 0);
+	border: none;
+
+  height: 60%;
+	width: 4rem;
+
+	margin-left: 3px;
+	margin-right: 4px;
+}
+
+.os_button_main,
+.clock_button_main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	background-color: #989ea1;
+}
+
+.os_text {
+	font-family: "WindowsRegularBold", monospace;
+
+	color: black;
+	font-size: 0.7em;
+	padding-bottom: 0.2em;
+  margin: 0.5em 6px 0.5em 0px;
+
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.clock_text {
+	font-family: "WindowsRegular", monospace;
+}
+
+.os_text,
+.clock_text {
+	color: black;
+	font-size: 0.7em;
+
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.logo {
+	height: 1em;
+	width: auto;
+	margin-left: 6px;
+}
+
+@media screen and (min-width: 641px) {
+
+	.clock_button_main {
+		width: 7em;
+	}
+
+	.os_text {
+		font-size: 0.9em;
+	}
+
+	.clock_text {
+		font-size: 0.8em;
+	}
+}
