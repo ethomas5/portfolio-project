@@ -11,7 +11,38 @@
 .App {
   display: flex;
   flex-direction: column;
-  font-family: "WindowsRegular", monospace;
+  font-family: "WindowsRegular", "Courier New", monospace;
   height: 100vh;
   width: auto;
+
+  min-width: 177px;
+}
+
+.App * {
+  overflow: hidden;
+}
+
+.softmicro_border {
+  border: solid black 2px;
+  border-width: 2px 3px 3px 2px;
+	border-color: #f0f0f1 #636363 #636363 #f0f0f1;
+
+	box-shadow: 1px 1px rgb(0, 0, 0), inset 1px 1px rgb(199, 199, 199);
+
+	padding: 0;
+}
+
+.reverse_softmicro_border {
+  border: 2px solid black;
+  border-color: #000000 #bdbdbd #bdbdbd #000000;
+
+	box-shadow: 1px 1px rgb(255, 255, 255), 2px -2px rgb(192, 192, 192), inset 0px 1px rgb(0, 0, 0), inset 1px 0px #636363;
+
+	padding: 0;
+}
+
+.non_interactive_border {
+  border: 2px solid black;
+  border-color: #636363 #ffffff white #636363;
+  box-shadow: inset 0px 1px rgb(255, 255, 255), inset 1px 0px rgb(255, 255, 255), inset -1px 0px #636363, inset 0px -1px #636363;
 }

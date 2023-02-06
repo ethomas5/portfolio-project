@@ -8,4 +8,11 @@
   margin-bottom: 0;
 
   height: 50px;
+  min-width: 216px;
+
+overflow: hidden;
+}
+
+.main_container * {
+overflow: hidden;
 }

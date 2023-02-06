@@ -1,11 +1,9 @@
 .icon_list {
   display: flex;
-  justify-content: space-evenly;
   margin: auto;
   margin-top: 4px;
   
   align-items: center;
-  height: 2em;
 }
 
 .desktop_icon_list {
@@ -22,19 +20,13 @@
   }
 }
 
-@media screen and (min-width: 900px) {
-  .desktop_icon_list {
-    margin-top: 0;
-  }
-}
-
 @media screen and (max-height: 390px){
   .desktop_icon_list {
     flex-direction: row;
   }
 }
 
-@media screen and (min-height: 800px) and (min-width: 800px) {
+@media screen and (min-height: 750px) and (min-width: 750px) {
   .desktop_icon_list {
     display: flex;
     flex-direction: column;
@@ -43,5 +35,10 @@
     
     margin-top: 20px;
     margin-left: 10px;
+  }
+
+  .icon_list {
+    margin-right: auto;
+    margin-left: 4px;
   }
 }

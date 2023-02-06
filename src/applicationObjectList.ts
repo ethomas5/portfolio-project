@@ -1,37 +1,73 @@
-export const applicationList = [
+export interface ApplicationFormat {
+	image: string
+	text: string
+	content?: string
+	regularApp: boolean
+	isOpen: boolean
+	professional?: ApplicationFormat
+	personal?: ApplicationFormat
+}
+
+export const applicationList: ApplicationFormat[] = [
+	{
+		image: "about_me.png",
+		text: "About Me",
+		content: "Coming Soon",
+		regularApp: true,
+		isOpen: false,
+	},
 	{
 		image: "projects_other.png",
 		text: "Projects",
-		link: "",
+		content: "Work In Progress",
+		regularApp: true,
+		isOpen: false,
 
 		professional: {
 			image: "Placeholder.png",
-			text: "Professional",
-			link: "",
+			text: "Professional Projects",
+			content: "Work In Progress",
+			regularApp: false,
+			isOpen: false,
 		},
 
 		personal: {
 			image: "Placeholder.png",
-			text: "Personal",
-			link: "",
+			text: "Personal Projects",
+			content: "Work In Progress",
+			regularApp: false,
+			isOpen: false,
 		},
 	},
 
 	{
 		image: "resume.png",
 		text: "Resume",
-		link: "",
+		content: "Work In Progress",
+		regularApp: true,
+		isOpen: false,
 	},
 
 	{
 		image: "other_experiences.png",
 		text: "Experience",
-		link: "",
+		content: "Work In Progress",
+		regularApp: true,
+		isOpen: false,
 	},
 
 	{
 		image: "contact.png",
 		text: "Contact",
-		link: "",
+		content: "Work In Progress",
+		regularApp: true,
+		isOpen: false,
+	},
+
+	{
+		image: "all_applications.png",
+		text: "All Applications",
+		regularApp: false,
+		isOpen: false,
 	},
 ];

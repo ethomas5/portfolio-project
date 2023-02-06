@@ -1,13 +1,15 @@
 import classes from "../../../global-styles/icon-styles.module.css"
+import { FooterIconProps } from "../../Footer/IconList/FooterIcons/FooterIcon"
 
-interface Props {
-  image: string
-  text: string
-}
+export default function SingleDesktopIcon({image, text, handleOnClick}: FooterIconProps) {
 
-export default function SingleDesktopIcon({image, text}: Props) {
+  const handleDoubleClick = () => {
+    handleOnClick
+
+  }
+
   return <div className={classes.desktop_icon}>
-    <img className={classes.desktop_icon_image} src={`/src/assets/${image}`} alt={text} />
+    <img onDoubleClick={handleOnClick} className={classes.desktop_icon_image} src={`/images/${image}`} alt={text} />
     <p>{text}</p>
   </div>
 }

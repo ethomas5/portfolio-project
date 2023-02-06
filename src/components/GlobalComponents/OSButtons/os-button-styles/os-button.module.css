@@ -1,10 +1,10 @@
 .os_button_main {
-	background-color: #989ea1;
-	border-width: 1px;
+	background-color: #acb3b7;
+	
+	border: solid black 2px;
+	border-width: 1px 1px 1px 1px;
 	border-color: #f0f0f1 #3a3a3a #3a3a3a #f0f0f1;
-
-	box-shadow: 1px 1px black, inset 1px 1px rgb(199, 199, 199);
-
+	box-shadow: 1px 1px black, inset 1px 1px rgb(199 199 199);
 	padding: 0;
 }
 
@@ -39,11 +39,11 @@
 	justify-content: space-evenly;
 	align-items: center;
 
-	background-color: #989ea1;
+	background-color: #acb3b7;
 }
 
 .os_text {
-	font-family: "WindowsRegularBold", monospace;
+	font-family: "WindowsRegularBold", "Courier New", monospace;
 
 	color: black;
 	font-size: 0.7em;

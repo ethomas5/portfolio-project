@@ -1,12 +1,21 @@
-import Application from "../ApplicationContent/ApplicationLayout"
+import { getSpecificApp } from "../../helper/retrieve-icon-info/fetchInfo"
+import Application from "../Application/ApplicationLayout"
 import DesktopIcons from "./DesktopIconList/DesktopIconsList"
 import classes from "./desktop.module.css"
 
-export default function Desktop() {
+interface Props {
+  currApp: string
+  handleOnClick: React.MouseEventHandler<HTMLElement>
+}
+
+export default function Desktop({currApp, handleOnClick}: Props) {
+
+  const currentApplication = getSpecificApp(currApp);
+
   return (
     <main className={classes.desktop}>
-      <DesktopIcons />
-      <Application />
+      <DesktopIcons handleOnClick={handleOnClick}/>
+      <Application currApp={currentApplication}/>
     </main>
   )
 }
